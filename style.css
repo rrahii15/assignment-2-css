@@ -1,0 +1,289 @@
+/* imported fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:ital,wght@0,600;1,500&family=Signika:wght@300&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#zen-supporting{
+    background-color: #c879b2;
+}
+html {
+  font-size: 18px;  /* Increase base font-size for better readability */
+}
+
+
+/* Global text alignment */
+body {
+  text-align: justify;
+  background-color: rgba(246,247,146,0.9);
+}
+
+/* This is to avoid the last line of a paragraph being spread full-width like a newspaper */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Style the page wrapper */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem 0;  /* Add padding for better structure */
+}
+
+header h2 {
+  margin-top: .75em;
+  color: #333;  /* Darken the text color for better readability */
+}
+
+
+/* main content */
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  color: #333;  /* Darken the text color for better readability */
+}
+
+h1 {
+  font-size: 2.2em;  /* Increase font-size for better visibility */
+}
+
+h2 {
+  font-size: 1.8em;  /* Increase font-size for better visibility */
+}
+
+h3 {
+  font-size: 1.5em;  /* Increase font-size for better visibility */
+}
+
+a {
+  color: #0099cc;
+  text-decoration: none;  /* Remove underline from links */
+}
+
+a:hover {
+  color: #006699;
+  background-color: #ddd;
+  transition: background-color 0.5s ease;
+}
+
+.intro, .main, .sidebar {
+  background-color: #df3c57;
+  padding: 30px;  /* Increase padding for better structure */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-bottom: 20px;  /* Add margin for better structure */
+}
+
+.intro:hover, .main:hover, .sidebar:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+    background-color: #000000; /* This is the hexadecimal color code for black */
+  }
+  
+
+/* Style the page wrapper */
+.page-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+header h2{
+    margin-top: .75em;
+}
+hr{
+    background-color: #081314;
+    width: 50%;
+    margin: 0 auto;
+    height: 5px;
+    align-items: center;
+}
+
+body {
+          font-size: 1rem;
+  /* color: #1532b3; */
+  font-family: 'Noto Sans', sans-serif;
+    background-color: #eaf299;
+}
+
+/* main content */
+h1,h2,h3{
+    font-family: 'Inter', sans-serif;
+
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0b322d;
+}
+/* pseduo class selector */
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+	color: rgb(83, 52, 40);
+	transition: color .2s ease;
+}
+
+.summary {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 3.5em;
+  text-align: center;
+}
+/* child and siblings  */
+.summary p:nth-child(2) {
+	margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+.preamble {
+  margin-bottom: 2rem;
+  background-color: rgba(171, 172, 161, 0.9);
+  padding: 1.5rem;
+  border-radius: 1em;
+  color: black;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.supporting {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.explanation,
+.participation,
+.benefits {
+  flex: 0.5;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 3.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+  transition: transform 250ms, opacity 400ms;
+}
+
+.explanation:hover,
+.participation:hover,
+.benefits:hover {
+    transform: scale(1.1);
+}
+
+
+.explanation {
+  margin-right: 2rem;
+  background-color: #0d2c40;
+  color: #ffffff;
+}
+
+.participation{
+    background-color: #3ac2d8;
+    color: #ffffff;
+}
+
+.benefits{
+ background-color: #f15b31;
+ color: #ffffff;
+}
+/* Style links */
+a {
+  color: #9b9ca1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.requirements{
+    border-radius: 2em;
+    padding: 2em;
+    background-color: #f6efe5;
+}
+
+.sidebar{
+    background-color: #040504;
+    /* background-color: rgba(246, 247, 146, 0.9); */
+    border-radius: 2em;
+
+}
+/* id selector */
+#wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding: 3em;
+}
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits {
+  padding: 2rem;
+  margin: 1rem;
+}
+/* footer  */
+footer{
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer a{
+    margin-right: 2em;
+   
+}
+
+footer a:hover{
+    color: rgb(80, 78, 79);
+    transition: color .3s ease;   
+}
